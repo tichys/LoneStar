@@ -41,7 +41,7 @@ GLOBAL_VAR_INIT(normal_looc_colour, "#6699CC")
 		//	to_chat(src, "<span class='danger'>You cannot use LOOC while unconscious or dead.</span>")
 		//	return
 		if(isdead(mob))
-			to_chat(src, "<span class='danger'>You cannot use LOOC while ghosting.</span>")
+			to_chat(src, "<span class='danger'>You cannot use LOOC while ghosting or observing. If you previously died in the round, return to your body to be able to LOOC.</span>")
 			return
 		if(HAS_TRAIT(mob, TRAIT_LOOC_MUTE))
 			to_chat(src, "<span class='danger'>You cannot use LOOC right now.</span>")
